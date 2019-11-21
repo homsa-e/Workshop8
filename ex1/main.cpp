@@ -45,6 +45,18 @@ int main (int argc, char **argv)
     }
   }
 
+  // examples of going through the map
+  for (const std::pair<std::string, int> &item : frequencies)
+  {
+  }
+  // forward
+  for (std::map<std::string, int>::iterator it = frequencies.begin (); it != frequencies.end (); ++it)
+  {
+  }
+  // backward
+  for (std::map<std::string, int>::reverse_iterator it = frequencies.rbegin (); it != frequencies.rend (); ++it)
+  {
+  }
   return 0;
 
 }
